@@ -16,7 +16,7 @@ const SearchBar = ({ onSearch }) => {
       setLoading(true);
       setError(null);
       try {
-        const response = await fetch('http://localhost:5000/api/search_jobs', {
+        const response = await fetch('https://genai-api.workisy.com/api/search_jobs', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ const SearchBar = ({ onSearch }) => {
         const formData = new FormData();
         formData.append('resume', file); // 'resume' is the field name your Flask API expects
 
-        const response = await fetch('http://localhost:5000/api/upload_resume', {
+        const response = await fetch('https://genai-api.workisy.com/api/upload_resume', {
           method: 'POST',
           body: formData, // Send the FormData object
         });
