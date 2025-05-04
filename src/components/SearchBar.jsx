@@ -85,7 +85,7 @@ const SearchBar = ({ onSearch }) => {
     <div className="modern-wrapper">
       {!submitted && (
         <>
-          <h1 className="modern-title">Introducing AI-Powered Job Search Engine</h1>
+          <h1 className="modern-title">Workisy Introducing AI-Powered Job Search Engine</h1>
           <p className="modern-subtitle">Upload your resume to get matched with the best jobs instantly</p>
         </>
       )}
